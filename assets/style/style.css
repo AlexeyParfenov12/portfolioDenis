@@ -1,0 +1,59 @@
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
+.header--nav-logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+}
+
+.main-section {
+    background-image: radial-gradient(at 50% 0%, #428345, #000000);
+    height: 100vh;
+}
+
+.section--main-text {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+.section--main-text *,
+.section--main-text *::after,
+.section--main-text *::before {
+    position: relative;
+    /* box-sizing: border-box; */
+}
+
+.section--main-text div:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    color: rgb(212, 212, 212);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.section--main-text div:nth-child(2) {
+    top: 50%;
+    color: rgb(212, 212, 212);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+
