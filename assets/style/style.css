@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: radial-gradient(at 50% -50%, #428345 0%, #000000 80%);
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -10,19 +23,20 @@ header {
     justify-items: center;
     align-items: center;
     padding: 1em;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
+
+
 
 .header--nav-logo {
     font-size: 1.8em;
     font-weight: 700;
-    color: rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .main-section {
-    background-image: radial-gradient(at 50% 0%, #428345, #000000);
     height: 100vh;
 }
 
@@ -33,26 +47,67 @@ header {
     padding: 0;
 }
 
-.section--main-text *,
-.section--main-text *::after,
-.section--main-text *::before {
-    position: relative;
-    /* box-sizing: border-box; */
+.section--main-text div:nth-child(1){
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
 }
 
-.section--main-text div:nth-child(1) {
-    top: 50%;
+.section--main-text svg {
+    position: absolute;
+    top: 80%;
     left: 50%;
-    color: rgb(212, 212, 212);
-    font-size: 3em;
-    font-weight: 700;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
 }
+
+.section--text-portfolio {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+
 
 .section--main-text div:nth-child(2) {
-    top: 50%;
-    color: rgb(212, 212, 212);
-    font-size: 3em;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 2em;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .section--main-text div:nth-child(1),
+    .section--main-text div:nth-child(2) {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section--main-text div:nth-child(1),
+    .section--main-text div:nth-child(2) {
+        font-size: 0.6em;
+    }
+}
+
+.section--about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5em 2em;
+    gap: 2em;
+    color: white;
+    text-align: center;
 }
 
 
