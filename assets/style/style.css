@@ -68,7 +68,7 @@ header {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-size: 6em;
     font-weight: 700;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
 }
 
 
@@ -85,17 +85,30 @@ header {
 }
 
 @media (max-width: 768px) {
-    .section--main-text div:nth-child(1),
-    .section--main-text div:nth-child(2) {
+    .section--main-text div:nth-child(1) {
         font-size: 1em;
+    }
+    .section--main-text div:nth-child(2){
+        width: 100%;
+        font-size: 1.5em;
+        top: 80%;
+        left: 75%;
+        transform: translate(-50%, -50%);
     }
 
 }
 
 @media (max-width: 480px) {
-    .section--main-text div:nth-child(1),
-    .section--main-text div:nth-child(2) {
+    .section--main-text div:nth-child(1){
         font-size: 0.6em;
+    }
+
+    .section--main-text div:nth-child(2){
+        width: 100%;
+        font-size: 1em;
+        top: 80%;
+        left: 75%;
+        transform: translate(-50%, -50%);
     }
 
     .section--about-me {
